@@ -53,8 +53,8 @@ function draw() {
     //muestra la hora en formato PM lasfeed mayor a 12
   //}else if(lastfeed==0){
     fill("black");
-    text("Ultima hora en que se alimento :"+ lastfeed, 350,30)
-    text(":00", 535,30);
+    text("Ultima hora en que se alimento :"+ lastfeed + ":00", 350,30)
+    //text(":00", 535,30);
     //}else{
       //fill("black");
       //text("Ultima hora en que se alimento : 12 AM", 350,30)
