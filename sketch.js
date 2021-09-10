@@ -80,7 +80,7 @@ function readStock(data){
 
 function readlastfeed(data){
   lastfeed=data.val();
-  lastfeed.getlasfed(lastfeed);
+  lastfeed.getFedTime(lastfeed);
 }
 
 
