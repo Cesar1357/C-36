@@ -61,7 +61,7 @@ function draw() {
 
   //}
  database.ref('/').update({
-  lastfeed:FeedTime
+ // lastfeed:FeedTime
 })
  
   //escribe el código para mostrar el texto lastFed time aquí
