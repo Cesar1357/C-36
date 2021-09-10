@@ -66,7 +66,7 @@ function draw() {
   //escribe el código para mostrar el texto lastFed time aquí
 
  database.ref('/').update({
-  FeedTime:lastfeed
+  lastfeed:FeedTime
 })
   drawSprites();
 }
