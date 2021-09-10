@@ -78,6 +78,11 @@ function readStock(data){
   foodObj.updateFoodStock(foodS);
 }
 
+function readlastfeed(data){
+  lastfeed=data.val();
+  .updateFoodStock(foodS);
+}
+
 
 function feedDog(){
   if(foodS >= 1){
