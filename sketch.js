@@ -60,7 +60,9 @@ function draw() {
       //text("Ultima hora en que se alimento : 12 AM", 350,30)
 
   //}
-  
+ database.ref('/').update({
+  lastfeed:FeedTime
+})
  
   //escribe el código para mostrar el texto lastFed time aquí
 
