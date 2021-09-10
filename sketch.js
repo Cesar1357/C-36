@@ -61,7 +61,7 @@ function draw() {
 
   //}
   
- lastfeed = hour();
+ 
   //escribe el código para mostrar el texto lastFed time aquí
 
  
@@ -78,7 +78,7 @@ function readStock(data){
 function feedDog(){
   if(foodS >= 1){
   dog.addImage(happyDog);
-  
+  lastfeed = hour();
 database.ref('/').update({
   FeedTime:lastfeed
 })
