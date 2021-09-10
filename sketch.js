@@ -2,7 +2,8 @@ var dog,sadDog,happyDog, database;
 var foodS,foodStock;
 var addFood;
 var foodObj;
-var feed, lastfeed;
+var feed;
+var lastfeed = 1;
 var database;
 //crea aquí las variables feed y lastFed 
 
@@ -60,13 +61,13 @@ function draw() {
       //text("Ultima hora en que se alimento : 12 AM", 350,30)
 
   //}
- database.ref('/').update({
- // lastfeed:FeedTime
-})
+
  
   //escribe el código para mostrar el texto lastFed time aquí
 
- 
+ database.ref('/').update({
+  FeedTime:lastfeed
+})
   drawSprites();
 }
 
