@@ -22,6 +22,9 @@ function setup() {
   foodStock=database.ref('Food');
   foodStock.on("value",readStock);
   
+  lastfeed=database.ref('FeedTime');
+  lastfeed.on("value",readlastfeed);
+  
   dog=createSprite(800,200,150,150);
   dog.addImage(sadDog);
   dog.scale=0.15;
@@ -65,9 +68,7 @@ function draw() {
  
   //escribe el código para mostrar el texto lastFed time aquí
 
- database.ref('/').update({
-  lastfeed:FeedTime
-})
+ 
   drawSprites();
 }
 
